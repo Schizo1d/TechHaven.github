@@ -1,0 +1,267 @@
+@font-face {
+	font-family: Centure-Gothic;
+	src: url(../fonts/centurygothic.ttf);
+}
+@font-face {
+	font-family: Centure-Gothic-Bold;
+	src: url(../fonts/centurygothic_bold.ttf);
+}
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+ul {
+	padding: 0px;
+}
+body {
+	font-family: Centure-Gothic;
+	padding: 110px 0px 0px;
+	margin: 0 auto;
+	background-color: #d7d7d7;
+}
+main {
+	width: 100%;
+	height: 100%;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(215, 215, 215, 0.7);
+	z-index: 9999;
+	transition: box-shadow 0.3s;
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+}
+.header_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	transition: padding-top 0.3s, padding-bottom 0.3s;
+}
+.header_mini {
+	box-shadow: 0px 0px 30px -11px rgba(0, 0, 0, 0.8);
+}
+.header_mini .header_container {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.logo {
+	display: block;
+}
+.logo_img {
+	width: 90%;
+	height: 90%;
+}
+input {
+	padding: 4px 10px;
+	border: 0;
+	font-size: 16px;
+	border-radius: 10px;
+}
+.search {
+	width: 50%;
+}
+
+.submit {
+	width: 70px;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.menu__list {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+}
+
+.menu__item {
+	display: inline-block;
+	align-items: center;
+	list-style-type: none;
+	margin-right: 20px;
+	padding: 0;
+}
+
+.menu__link {
+	font-size: 16px;
+}
+.section {
+	position: relative;
+	height: 450px;
+}
+swiper-container {
+	width: 100%;
+	height: 100%;
+	background-color: #d7d7d7;
+}
+
+swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #d7d7d7;
+	display: flex;
+	justify-content: center;
+}
+
+swiper-slide img {
+	display: block;
+	width: 20%;
+	height: 20%;
+	object-fit: cover;
+}
+.opisanie_swiper {
+	display: inline-block;
+	text-align: left;
+	font-family: Centure-Gothic;
+	transform: translateX(-20px);
+	font-size: 22pt;
+}
+.swiper_subtitle {
+	text-decoration: underline;
+}
+
+.section--two {
+	height: 525px;
+	position: relative;
+	background-color: white;
+}
+.section--two table {
+	border-spacing: 15px;
+	max-width: 100%;
+	max-height: 490px;
+}
+.section--two td {
+	position: relative;
+	background-color: #d7d7d7;
+	width: 237.5px;
+	height: 200px;
+	text-align: center;
+}
+.table__container {
+	position: relative;
+}
+
+.table__text {
+	vertical-align: top;
+	font-size: 16px;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+.table__price {
+	margin: 0;
+	padding: 0;
+	font-size: 28px;
+	font-family: Centure-Gothic-Bold;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.kuhnya {
+	height: 490px;
+	margin-bottom: -5px;
+}
+.image__text {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	font-family: Centure-Gothic-Bold;
+	font-size: 42px;
+	text-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+}
+.image__text a {
+	display: block;
+	margin-top: 20px;
+	font-size: 24px;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.image__text a:hover {
+	color: #d7d7d7;
+}
+.section--third {
+	display: flex;
+	justify-content: space-around;
+	margin-left: 10%;
+	margin-right: 10%;
+	top: 5vh;
+	margin-bottom: 10vh;
+	height: 525px;
+	position: relative;
+	background-color: #d7d7d7;
+}
+.card {
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	background-color: #fff;
+	height: 450px;
+	width: 250px;
+	border-radius: 20px;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 5px 5px 40px black;
+}
+.card:hover {
+	height: 470px;
+	width: 265px;
+}
+.card-title {
+	margin-top: 20px;
+	width: 98%;
+	height: 60px;
+}
+.card-price {
+	position: relative;
+	height: 100px;
+	font-family: Centure-Gothic-Bold;
+	font-size: 28px;
+}
+
+.card-img {
+	width: 200px;
+	height: 200px;
+	object-fit: scale-down;
+}
+.Populiar {
+	position: relative;
+	top: 3vh;
+	margin-left: 12.5%;
+}
+.footer {
+	width: 100%;
+	height: 300px;
+	background-color: #444342;
+}
+.footer-text {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 4%;
+}
+.footer-text p {
+	font-family: Centure-Gothic-Bold;
+	width: 14vh;
+}
+.aasd {
+	position: relative;
+}

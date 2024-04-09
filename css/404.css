@@ -1,0 +1,37 @@
+@font-face {
+	font-family: Centure-Gothic;
+	src: url(../fonts/centurygothic.ttf);
+}
+@font-face {
+	font-family: Centure-Gothic-Bold;
+	src: url(../fonts/centurygothic_bold.ttf);
+}
+body {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+h1 {
+	font-size: 50px;
+	text-align: center;
+	font-family: Centure-Gothic-Bold;
+}
+
+p {
+	text-align: center;
+	font-family: Centure-Gothic;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+button {
+	font-family: Centure-Gothic;
+	border-radius: 10px;
+	background-color: #000000;
+	color: white;
+	margin: 0 auto;
+	display: block;
+}
